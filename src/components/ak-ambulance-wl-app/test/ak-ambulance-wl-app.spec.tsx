@@ -6,7 +6,7 @@ describe('ak-ambulance-wl-app', () => {
     const page = await newSpecPage({
       url: `http://localhost/entry/@new`,
       components: [AkAmbulanceWlApp],
-      html: `<<pfx>-ambulance-wl-app base-path="/"></<pfx>-ambulance-wl-app>`,
+      html: `<ak-ambulance-wl-app base-path="/"></<ak-ambulance-wl-app>`,
     });
     page.win.navigation = new EventTarget()
     const child = await page.root.shadowRoot.firstElementChild;
@@ -18,7 +18,7 @@ describe('ak-ambulance-wl-app', () => {
     const page = await newSpecPage({
       url: `http://localhost/ambulance-wl/`,
       components: [AkAmbulanceWlApp],
-      html: `<ak-ambulance-wl-app base-path="/ambulance-wl/"></</ak-ambulance-wl-app>`,
+      html: `<ak-ambulance-wl-app base-path="/ambulance-wl/"></</ak-ambulance-wl-app>`
     });
     page.win.navigation = new EventTarget()
     const child = await page.root.shadowRoot.firstElementChild;
