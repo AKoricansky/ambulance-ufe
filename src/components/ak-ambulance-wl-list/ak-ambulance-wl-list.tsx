@@ -1,6 +1,7 @@
 import { Component, Event, EventEmitter,  Host, Prop, State, h } from '@stencil/core';
 import { AmbulanceWaitingListApi, WaitingListEntry, Configuration } from '../../api/ambulance-wl';
 
+
 @Component({
   tag: 'ak-ambulance-wl-list',
   styleUrl: 'ak-ambulance-wl-list.css',
